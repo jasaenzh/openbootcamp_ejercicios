@@ -1,0 +1,11 @@
+.imagenes-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20;
+}
+
+.img-div:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}

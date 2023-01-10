@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    background-color: blue;
+    width: 35rem;
+    height: 35rem;
+    display: flex;
+}
+
+.barra-lateral {
+    background-color: aquamarine;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elemento {
+    padding: 0.25rem;
+    margin: 0.25rem;
+    border: 1px solid gray;
+}
+
+.seccion-principal {
+    flex-grow: 1;
+    background-color: blue;
+}
+
+@media(max-width:640px) {
+    .barra-lateral {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 0;
+        width: 35rem;
+        transform: translateX(0);
+    }
+}
